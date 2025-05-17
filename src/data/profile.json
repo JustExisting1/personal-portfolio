@@ -5,21 +5,21 @@
       "link": "https://justexisting1.github.io/pokemon-guess-who/",
       "siteName": "Pokemon Guess Who",
       "tags": ["React", "API", "TailwindCSS"],
-      "description": "A WebApp that uses an open API to randomly select and display data for gameplay purposes. It uses React + Typescript with Tailwind CSS. "
+      "description": "A WebApp that uses an open API to randomly select and display data for gameplay purposes."
     },
     {
       "imgSrc": "./twSite.jpg",
       "link": "https://tomw9981.github.io/tw-portfolio/",
       "siteName": "Client Portfolio",
       "tags": ["React", "TailwindCSS"],
-      "description": "A custom portfolio website I solely developed for a client. This also used React + Typescript with Tailwind CSS"
+      "description": "A custom portfolio website I solely developed for a client."
     },
     {
       "imgSrc": "./figmaSite.jpg",
       "link": "https://justexisting1.github.io/FigmaPortfolio/",
       "siteName": "Client Portfolio",
       "tags": ["React", "TailwindCSS", "Figma", "React Router"],
-      "description": "A Figma designs converted into fully functional websites."
+      "description": "A Figma design converted into fully functional websites."
     }
   ]
 }

@@ -40,9 +40,9 @@ function App() {
       <p>Skills</p>
       <div className="bg-accent drop-shadow-lg h-8"></div>
       <div className="flex flex-col w-full bg-background place-items-center bg-[url(./Background2.jpg)] bg-fixed">
-        <p>Portfolio</p>
+        <h1 className="text-6xl font-bold py-16">Portfolio</h1>
         {/* portfolio */}
-        <div className="grid grid-cols-2 justify-center w-4/5 p-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center w-full sm:w-4/5 p-2 gap-8">
           {profileData.website.map((site, index) => {
             return <PortfolioSite data={site} key={index} />;
           })}
@@ -71,9 +71,9 @@ interface IPortfolio {
 
 function PortfolioSite({ data }: { data: IPortfolio }) {
   return (
-    <div className="flex flex-row size-fit bg-muted/25 shadow-md shadow-black/25 backdrop-blur-2xl p-4 gap-4 rounded-2xl">
+    <div className="flex flex-col 2xl:flex-row size-fit bg-muted/25 shadow-md shadow-black/25 backdrop-blur-2xl p-4 gap-4 rounded-2xl">
       <div
-        className="flex shrink-0 w-2/3 h-full aspect-video bg-red-200 rounded-xl drop-shadow-md drop-shadow-black/25
+        className="flex shrink-0 w-full 2xl:w-2/3 h-full aspect-video bg-red-200 rounded-xl drop-shadow-md drop-shadow-black/25
           hover:scale-102 transition-all duration-300 overflow-clip">
         <a href={data.link} target="_blank" rel="noreferrer noopener">
           <img
@@ -87,13 +87,13 @@ function PortfolioSite({ data }: { data: IPortfolio }) {
         <div className="flex flex-row flex-wrap gap-2 text-xl">
           {data.tags.map((tag) => {
             return (
-              <p className="w-fit h-fit px-4 bg-primary rounded-2xl text-center">
+              <p className="w-fit h-fit text-[1.75vh] px-4 bg-primary rounded-2xl text-center">
                 {tag}
               </p>
             );
           })}
         </div>
-        <p className="text-lg line-clamp-5">{data.description}</p>
+        <p className="text-[1.5vh] line-clamp-5">{data.description}</p>
       </div>
     </div>
   );
