@@ -17,7 +17,7 @@
     {
       "imgSrc": "./figmaSite.jpg",
       "link": "https://justexisting1.github.io/FigmaPortfolio/",
-      "siteName": "Client Portfolio",
+      "siteName": "Figma Design to Website",
       "tags": ["React", "TailwindCSS", "Figma", "React Router"],
       "description": "A Figma design converted into fully functional websites."
     }

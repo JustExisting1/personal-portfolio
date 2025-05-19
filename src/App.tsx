@@ -1,4 +1,10 @@
 import TiltedCard from "./components/TiltedCard/TiltedCard";
+import {
+  AnimatePresence,
+  motion,
+  type Variant,
+  type Variants,
+} from "motion/react";
 
 function App() {
   return (
@@ -35,52 +41,112 @@ function App() {
           />
         </div>
       </div>
-      <div className="bg-accent drop-shadow-lg h-8"></div>
 
       {/* Content */}
-      <div className="flex flex-col w-full bg-cover place-items-center bg-[url(./Background3.webp)] bg-fixed p-2">
+      <div className="bg-foreground backdrop-blur-2xl drop-shadow-lg h-16"></div>
+      <div className="flex flex-col w-full bg-cover bg-[url(./Background3.webp)] bg-fixed p-2">
         {/* About Me */}
-        <p className="text-6xl font-bold py-16">About me</p>
-        <div
-          className="grid grid-cols-1 lg:grid-cols-2 w-full md:w-4/5 2xl:w-2/5 gap-8 p-4 my-16
-        bg-muted/25 backdrop-blur-2xl rounded-2xl">
-          <div className="flex flex-col gap-4">
-            <p className="whitespace-pre-line text-xl text-pretty">
-              I'm a UK based front-end developer and recent graduate.
-              <br />
-              I love turning stunning desings into fully functional websites.
-              <br />I started out coding and developing games. This quickly
-              turned into a passion and I learnt all the basics, from 3D
-              modelling and art, to programming. Now I mainly focus on web
-              development, using react and typescript.
-            </p>
-            <div className="grid grid-cols-2 gap-4">
-              {profile.tech.map((data, index) => {
-                return <TechTag data={data} key={index} />;
+        <AnimatePresence>
+          <motion.div
+            className="place-items-center outline"
+            variants={parent}
+            viewport={viewrange}
+            initial="exit"
+            whileInView="enter">
+            <motion.h1
+              className="text-6xl font-bold pt-16"
+              variants={animations}>
+              About me
+            </motion.h1>
+            <motion.div
+              className="grid grid-cols-1 lg:grid-cols-2 w-full md:w-4/5 2xl:w-2/5 gap-8 p-4 my-16
+            bg-muted/25 backdrop-blur-2xl rounded-2xl"
+              variants={animations}>
+              <div className="flex flex-col gap-4">
+                <p className="whitespace-pre-line text-xl text-pretty">
+                  I'm a UK based front-end developer and recent graduate.
+                  <br />
+                  I love turning stunning desings into fully functional
+                  websites.
+                  <br />I started out coding and developing games. This quickly
+                  turned into a passion and I learnt all the basics, from 3D
+                  modelling and art, to programming. Now I mainly focus on web
+                  development, using React and Typescript.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  {profile.tech.map((data, index) => {
+                    return <TechTag data={data} key={index} />;
+                  })}
+                </div>
+              </div>
+              <div className="order-1">Big image or something</div>
+            </motion.div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+      <div className="bg-foreground backdrop-blur-2xl drop-shadow-lg h-16"></div>
+      <div className="flex flex-col w-full bg-background bg-[url(./Background2.webp)] bg-fixed">
+        <AnimatePresence>
+          <motion.div
+            className="place-items-center"
+            variants={parent}
+            viewport={viewrange}
+            initial="exit"
+            whileInView="enter">
+            <motion.h1
+              className="text-6xl font-bold pt-16"
+              variants={animations}>
+              Portfolio
+            </motion.h1>
+            {/* portfolio */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-center w-full sm:w-4/5 my-16 p-2 gap-8">
+              {profileData.website.map((site, index) => {
+                return <PortfolioSite data={site} key={index} />;
               })}
             </div>
-          </div>
-          <div className="order-1">Big image or something</div>
-        </div>
-      </div>
-
-      <p>Skills</p>
-      <div className="bg-accent drop-shadow-lg h-8"></div>
-      <div className="flex flex-col w-full bg-background place-items-center bg-[url(./Background2.webp)] bg-fixed">
-        {/* portfolio */}
-        <h1 className="text-6xl font-bold py-16">Portfolio</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center w-full sm:w-4/5 p-2 gap-8">
-          {profileData.website.map((site, index) => {
-            return <PortfolioSite data={site} key={index} />;
-          })}
-        </div>
-        <p>Experience</p>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </>
   );
 }
 
+interface ViewportOptions {
+  root?: RefObject<Element | null>;
+  once?: boolean;
+  margin?: string;
+  amount?: "some" | "all" | number;
+}
+
+const viewrange: ViewportOptions = {
+  amount: "some",
+  margin: "-300px 0px -300px 0px",
+  once: false,
+};
+
+const parent: Variants = {
+  enter: {
+    transition: { staggerChildren: 0.3 },
+  },
+  exit: {
+    transition: { staggerChildren: 1.0, staggerDirection: -1 },
+  },
+};
+
+const animations: Variants = {
+  exit: { opacity: 0, y: "1vh" },
+  enter: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+};
+
 import profile from "./data/profile.json";
+import type { RefObject } from "react";
 
 const profileData = profile;
 
