@@ -67,33 +67,6 @@
   --radius: 0.5rem;
 }
 
-.dark {
-  --background: hsl(0 42% 2%);
-  --foreground: hsl(0 10% 100%);
-  --muted: hsl(180 5% 15%);
-  --muted-foreground: hsl(180 2% 74%);
-  --popover: hsl(0 42% 2%);
-  --popover-foreground: hsl(0 10% 100%);
-  --card: hsl(0 42% 3%);
-  --card-foreground: hsl(0 0% 100%);
-  --border: hsl(0 13% 14%);
-  --input: hsl(0 13% 14%);
-  --primary: hsl(0 72% 51%);
-  --primary-foreground: hsl(0 0% 100%);
-  --secondary: hsl(180 72% 51%);
-  --secondary-foreground: hsl(180 72% 11%);
-  --accent: hsl(180 72% 51%);
-  --accent-foreground: hsl(180 72% 11%);
-  --destructive: hsl(3 93% 58%);
-  --destructive-foreground: hsl(0 0% 100%);
-  --ring: hsl(0 72% 51%);
-  --chart-1: hsl(0 72% 51%);
-  --chart-2: hsl(180 72% 51%);
-  --chart-3: hsl(180 72% 51%);
-  --chart-4: hsl(180 72% 54%);
-  --chart-5: hsl(0 75% 51%);
-}
-
 @theme {
   --font-main: "Reem Kufi", serif;
 }

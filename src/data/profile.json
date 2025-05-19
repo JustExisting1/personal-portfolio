@@ -21,5 +21,35 @@
       "tags": ["React", "TailwindCSS", "Figma", "React Router"],
       "description": "A Figma design converted into fully functional websites."
     }
+  ],
+  "tech": [
+    {
+      "imgSrc": "./typescript-icon.svg",
+      "name": "Typescript"
+    },
+    {
+      "imgSrc": "./React-icon.svg",
+      "name": "React"
+    },
+    {
+      "imgSrc": "./tailwind-css-icon.svg",
+      "name": "TailwindCSS"
+    },
+    {
+      "imgSrc": "./next-js.svg",
+      "name": "Next.js"
+    },
+    {
+      "imgSrc": "./c.svg",
+      "name": "C#"
+    },
+    {
+      "imgSrc": "./adobe-photoshop-icon.svg",
+      "name": "Photoshop"
+    },
+    {
+      "imgSrc": "./blender-icon.svg",
+      "name": "Blender"
+    }
   ]
 }

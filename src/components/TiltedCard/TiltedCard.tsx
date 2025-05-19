@@ -98,8 +98,7 @@ export default function TiltedCard({
       }}
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       {showMobileWarning && (
         <div className="absolute top-4 text-center text-sm block sm:hidden">
           This effect is not optimized for mobile. Check on desktop.
@@ -114,8 +113,7 @@ export default function TiltedCard({
           rotateX,
           rotateY,
           scale,
-        }}
-      >
+        }}>
         <motion.img
           src={imageSrc}
           alt={altText}
@@ -141,8 +139,7 @@ export default function TiltedCard({
             y,
             opacity,
             rotate: rotateFigcaption,
-          }}
-        >
+          }}>
           {captionText}
         </motion.figcaption>
       )}
