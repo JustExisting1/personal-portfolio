@@ -1,13 +1,6 @@
 import TiltedCard from "./components/TiltedCard/TiltedCard";
 import { AnimatePresence, motion, type Variants } from "motion/react";
 
-/*
-         containerHeight="50vh"
-            containerWidth="40vh"
-            imageHeight="50vh"
-            imageWidth="40vh"
-*/
-
 function App() {
   return (
     <>
@@ -17,10 +10,6 @@ function App() {
           <div className="flex aspect-[0.8/1] w-10/12 sm:w-fit sm:h-[50vh]">
             <TiltedCard
               imageSrc="./Frame.webp"
-              // containerHeight="0"
-              // containerWidth="0"
-              // imageHeight="0"
-              // imageWidth="0"
               rotateAmplitude={5}
               scaleOnHover={1.05}
               showTooltip={false}
