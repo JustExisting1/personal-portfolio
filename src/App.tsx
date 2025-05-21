@@ -5,11 +5,14 @@ function App() {
   return (
     <>
       {/* Landing Area */}
-      <div className="w-full h-dvh flex bg-cover bg-center bg-[url(./Background1.webp)] bg-fixed place-content-center place-items-center">
+      <div
+        // style={{"background-image: url('./bgs/Background2.webp')"}}
+        style={{ backgroundImage: "url('./bgs/Background1.webp')" }}
+        className="w-full h-dvh flex bg-cover bg-center bg-fixed place-content-center place-items-center">
         <div className="w-full h-full place-content-center place-items-center backdrop-brightness-80">
           <div className="flex aspect-[0.8/1] w-10/12 sm:w-fit sm:h-[50vh]">
             <TiltedCard
-              imageSrc="./Frame.webp"
+              imageSrc="./assets/Frame.webp"
               rotateAmplitude={5}
               scaleOnHover={1.05}
               showTooltip={false}
@@ -35,7 +38,9 @@ function App() {
         </div>
       </div>
       {/* Content */}
-      <div className="flex flex-col w-full bg-cover bg-[url(./Background3.webp)] bg-fixed">
+      <div
+        style={{ backgroundImage: "url('./bgs/Background3.webp')" }}
+        className="flex flex-col w-full bg-cover  bg-fixed">
         <div className="bg-muted/25 backdrop-blur-2xl drop-shadow-lg h-16"></div>
         <div className="p-2">
           {/* About Me */}
@@ -81,7 +86,9 @@ function App() {
         </div>
       </div>
       {/* Portfolio */}
-      <div className="flex flex-col w-full bg-background bg-[url(./Background2.webp)] bg-fixed">
+      <div
+        style={{ backgroundImage: "url('./bgs/Background2.webp')" }}
+        className="flex flex-col w-full bg-background bg-fixed">
         <div className="bg-muted/25 backdrop-blur-2xl drop-shadow-lg h-16"></div>
         <div className="p-2">
           <AnimatePresence>
@@ -109,15 +116,15 @@ function App() {
           <div className="flex flex-row gap-4">
             <FooterLink
               link="https://www.linkedin.com/in/jacob-a-b58747184"
-              imgSrc="./Linkedin.svg"
+              imgSrc="./icons/Linkedin.svg"
             />
             <FooterLink
               link="mailto:alexanderrothwellj@gmail.com"
-              imgSrc="./Mail.svg"
+              imgSrc="./icons/Mail.svg"
             />
             <FooterLink
               link="https://github.com/JustExisting1"
-              imgSrc="./Github.svg"
+              imgSrc="./icons/Github.svg"
             />
           </div>
           <p>© 2025 - All Rights Reserved</p>
@@ -202,7 +209,7 @@ function PortfolioSite({ data }: { data: IPortfolio }) {
         <a href={data.link} target="_blank" rel="noreferrer noopener">
           <img
             src={data.imgSrc}
-            className=" hover:scale-102 transition-all duration-300"
+            className="w-full bg-muted/25 hover:scale-102 transition-all duration-300"
           />
         </a>
       </div>

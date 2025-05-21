@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&family=Reem+Kufi:wght@400..700&display=swap");
 @import "tailwindcss";
 
+@source "..//public/bgs)";
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

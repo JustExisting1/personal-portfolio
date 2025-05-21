@@ -1,21 +1,21 @@
 {
   "website": [
     {
-      "imgSrc": "./pokeSite.jpg",
+      "imgSrc": "./sites/pokeSite.jpg",
       "link": "https://justexisting1.github.io/pokemon-guess-who/",
       "siteName": "Pokemon Guess Who",
       "tags": ["React", "API", "TailwindCSS"],
       "description": "A WebApp that uses an open API to randomly select and display data for gameplay purposes."
     },
     {
-      "imgSrc": "./twSite.jpg",
+      "imgSrc": "./sites/twSite.jpg",
       "link": "https://tomw9981.github.io/tw-portfolio/",
       "siteName": "Client Portfolio",
       "tags": ["React", "TailwindCSS"],
       "description": "A custom portfolio website I solely developed for a client."
     },
     {
-      "imgSrc": "./figmaSite.jpg",
+      "imgSrc": "./sites/figmaSite.jpg",
       "link": "https://justexisting1.github.io/FigmaPortfolio/",
       "siteName": "Figma Design to Website",
       "tags": ["React", "TailwindCSS", "Figma", "React Router"],
@@ -24,31 +24,31 @@
   ],
   "tech": [
     {
-      "imgSrc": "./typescript-icon.svg",
+      "imgSrc": "./icons/typescript-icon.svg",
       "name": "Typescript"
     },
     {
-      "imgSrc": "./React-icon.svg",
+      "imgSrc": "./icons/React-icon.svg",
       "name": "React"
     },
     {
-      "imgSrc": "./tailwind-css-icon.svg",
+      "imgSrc": "./icons/tailwind-css-icon.svg",
       "name": "TailwindCSS"
     },
     {
-      "imgSrc": "./next-js.svg",
+      "imgSrc": "./icons/next-js.svg",
       "name": "Next.js"
     },
     {
-      "imgSrc": "./c.svg",
+      "imgSrc": "./icons/c.svg",
       "name": "C#"
     },
     {
-      "imgSrc": "./adobe-photoshop-icon.svg",
+      "imgSrc": "./icons/adobe-photoshop-icon.svg",
       "name": "Photoshop"
     },
     {
-      "imgSrc": "./blender-icon.svg",
+      "imgSrc": "./icons/blender-icon.svg",
       "name": "Blender"
     }
   ]
