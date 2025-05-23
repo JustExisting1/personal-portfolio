@@ -123,7 +123,7 @@ function App() {
               imgSrc="./icons/Mail.svg"
             />
             <FooterLink
-              link="https://github.com/JustExisting1"
+              link="https://github.com/JustJacobJar"
               imgSrc="./icons/Github.svg"
             />
           </div>

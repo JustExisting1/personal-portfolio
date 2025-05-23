@@ -2,7 +2,7 @@
   "website": [
     {
       "imgSrc": "./sites/pokeSite.jpg",
-      "link": "https://justexisting1.github.io/pokemon-guess-who/",
+      "link": "https://justjacobjar.github.io/pokemon-guess-who/",
       "siteName": "Pokemon Guess Who",
       "tags": ["React", "API", "TailwindCSS"],
       "description": "A WebApp that uses an open API to randomly select and display data for gameplay purposes."
@@ -16,7 +16,7 @@
     },
     {
       "imgSrc": "./sites/figmaSite.jpg",
-      "link": "https://justexisting1.github.io/FigmaPortfolio/",
+      "link": "https://justjacobjar.github.io/FigmaPortfolio/",
       "siteName": "Figma Design to Website",
       "tags": ["React", "TailwindCSS", "Figma", "React Router"],
       "description": "A Figma design converted into fully functional websites."
